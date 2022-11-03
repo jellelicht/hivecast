@@ -1,0 +1,24 @@
+{
+  "name": "hivecast",
+  "version": "0.1.0-HEAD",
+  "description": "Quickly convert block numbers to (estimated) timestamps, and vice-versa",
+  "type": "module",
+  "exports": "./lib.mjs",
+  "scripts": {
+    "start": "node lib.mjs",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jelle Licht <jlicht@posteo.net>",
+  "license": "MIT",
+  "engines": {
+    "node": ">=14.16"
+  },
+  "dependencies": {
+    "es-main": "^1.2.0",
+    "splinterlands-dhive-sl": "1.0.26"
+  },
+  "bin": {
+    "block2ts": "./bin/block2ts.mjs",
+    "ts2block": "./bin/ts2block.mjs"
+  }
+}
